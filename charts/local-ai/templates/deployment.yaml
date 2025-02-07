@@ -193,6 +193,18 @@ spec:
               mountPath: {{ $pvc.globalMount | default (print "/" $key) }}
               {{- end }}
             {{- end }}
+          {{- if .Values.deployment.livenessProbe }}
+          livenessProbe:
+            {{- toYaml .Values.deployment.livenessProbe | nindent 12 }}
+          {{- end }}
+          {{- if .Values.deployment.readinessProbe }}
+          readinessProbe:
+            {{- toYaml .Values.deployment.readinessProbe | nindent 12 }}
+          {{- end }}
+          {{- if .Values.deployment.securityContext }}
+          securityContext:
+            {{- toYaml .Values.deployment.securityContext | nindent 12 }}
+          {{- end }}
       {{- if $rootPersistence}}
       volumes:
         {{- range $key, $pvc := $rootPersistence}}
