@@ -3,6 +3,16 @@ entries:
   local-ai:
   - apiVersion: v2
     appVersion: "2.23"
+    created: "2025-02-07T21:30:00.506700023Z"
+    description: A Helm chart for deploying LocalAI to a Kubernetes cluster
+    digest: 00ad83daa8cc2dcb27883fe5cdf562074f85f86e14df80831ff2f2bd9c6f184d
+    name: local-ai
+    type: application
+    urls:
+    - https://github.com/matgoebl/local-ai--helm-charts/releases/download/local-ai-3.4.2-mg2/local-ai-3.4.2-mg2.tgz
+    version: 3.4.2-mg2
+  - apiVersion: v2
+    appVersion: "2.23"
     created: "2025-02-07T21:12:53.286018547Z"
     description: A Helm chart for deploying LocalAI to a Kubernetes cluster
     digest: 0754bbcf2b30a7e149f23c9ce14814948faa2459f65d98e9bf9665baf50a61d5
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/matgoebl/local-ai--helm-charts/releases/download/local-ai-3.4.2-mg1/local-ai-3.4.2-mg1.tgz
     version: 3.4.2-mg1
-generated: "2025-02-07T21:12:53.286027023Z"
+generated: "2025-02-07T21:30:00.506716845Z"
