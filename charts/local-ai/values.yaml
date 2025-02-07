@@ -26,6 +26,7 @@ deployment:
   
   ## Needed for GPU Nodes
   #runtimeClassName: gpu
+  podAnnotations: {}
 
 resources:
   {}
